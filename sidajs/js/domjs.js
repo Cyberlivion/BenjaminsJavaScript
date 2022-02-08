@@ -1,20 +1,20 @@
 "use strict";
-varimageCounter = 1;
+var imageCounter = 1;
 showDiv(imageCounter);
 function changeImage(m) {
-showDiv(imageCounter= imageCounter+ m);
+showDiv(imageCounter = imageCounter + m);
 }
 function showDiv(n) {
-vari;
-varimageArray =document.getElementsByClassName("mySlides");
-if(n > imageArray.lenght){
-imageCounter=1;
+var i;
+var imageArray = document.getElementsByClassName("mySlides");
+if (n > imageArray.length) {
+imageCounter = 1;
 }
 if(n < 1){
-imageCounter= imageArray.length;
+imageCounter = imageArray.length;
 }
-for(i = 0;i < imageArray.length; i++) {
-imageArray[i].style.display="none";
+for(i = 0; i < imageArray.length; i++) {
+imageArray[i].style.display = "none";
 }
-imageArray[imageCounter-1].style.display="block";
+imageArray[imageCounter - 1].style.display= "block";
 }
