@@ -25,7 +25,7 @@ imageCounter= imageArray.length;
 
 }
 
-for(i = 0;i < imageArray.length;i++){
+for(i = 0;i < imageArray.length; i++) {
 
 imageArray[i].style.display="none";
 
